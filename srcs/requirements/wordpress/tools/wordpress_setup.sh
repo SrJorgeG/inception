@@ -45,4 +45,5 @@ fi
 chown -R www-data:www-data /var/www/html
 
 # Start PHP-FPM in foreground as PID 1
-exec php-fpm7.4 -F
+mkdir -p /run/php
+exec php-fpm8.2 -F
